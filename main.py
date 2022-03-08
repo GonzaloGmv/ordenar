@@ -1,4 +1,4 @@
-from clases.ejercicio1 import ejr1a
+from clases.ejercicio1 import ejr1a, ejr1b
 from clases.ejercicio2 import ejr2
 
 if __name__ == "__main__":
@@ -17,19 +17,20 @@ if __name__ == "__main__":
         while True:
             ejr = input("Escriba el apartado que desea iniciar, a o b: ")
             try:
-                ejr = 'a'
+                ejr == 'a' or ejr == 'b'
             except:
-                try:
-                    ejr = 'b'
-                except:
-                    pass
+                pass
             else:
                 break
 
         if ejr == 'a':
-            ejercicio_1 = ejr1a()
-            ejercicio_1.ejecutar()
+            ejercicio = ejr1a()
+            ejercicio.ejecutar_1a()
+
+        elif ejr == 'b':
+            ejercicio = ejr1b()
+            ejercicio.crear(0, 0, 0)
             
     if ejr == 2:
-        ejercicio_2 = ejr2()
-        ejercicio_2.ordenacion(1, 0)
+        ejercicio = ejr2()
+        ejercicio.ordenacion(1, 0)

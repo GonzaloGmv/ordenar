@@ -19,6 +19,3 @@ class ejr2():
             else:
                 print("Esa tarea no es la que toca ahora, realice la tarea", n)
                 self.ordenacion(n, t+1)
-
-    def ejecutar(self):
-        self.ordenacion(1, 0)
