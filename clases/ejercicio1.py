@@ -20,21 +20,19 @@ class ejr1a:
         self.tabla = tabla
 
     def buscar(self, c, m, m0):
-        if m >= 0 and m <= len(self.tabla):
-            if type(c) == type(self.tabla[m]):
+        if type(c) == type(self.tabla[m]):
+            if c in self.tabla:
                 if c == self.tabla[m]:
                     print(c, "se encuentra en la posicion", m)
                 elif c > self.tabla[m]:
                     self.buscar(c, int((m0+m)/2), m)
                 elif c < self.tabla[m]:
-                    self.buscar(c, int((m-m0)/2), m)
-                else:
-                    print(c, "no esta en la tabla")
+                    self.buscar(c, int((m0-m)/2), m)
             else:
-                    print(c, "no esta en la tabla")
+                print(c, "no esta en la tabla")
         else:
-            print(c, "no esta en la tabla")
-
+                print(c, "no esta en la tabla")
+        
     def ejecutar(self):
         n = input("Escriba el valor de c: ")
         try:
@@ -44,4 +42,4 @@ class ejr1a:
                 n = float(n)
             except:
                 pass
-        self.buscar(n, int(len(self.tabla)/2), int(len(self.tabla)/2))
+        self.buscar(n, int(len(self.tabla)/2), int(len(self.tabla)))
