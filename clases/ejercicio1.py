@@ -24,12 +24,10 @@ class ejr1a:
             if type(c) == type(self.tabla[m]):
                 if c == self.tabla[m]:
                     print(c, "se encuentra en la posicion", m)
-                elif c > self.tabla[m] and m >= m0:
-                    m0 = m
-                    self.buscar(c, m+1, m0)
-                elif c < self.tabla[m] and m <= m0:
-                    m0 = m
-                    self.buscar(c, m-1, m0)
+                elif c > self.tabla[m]:
+                    self.buscar(c, int((m0+m)/2), m)
+                elif c < self.tabla[m]:
+                    self.buscar(c, int((m-m0)/2), m)
                 else:
                     print(c, "no esta en la tabla")
             else:
@@ -47,5 +45,3 @@ class ejr1a:
             except:
                 pass
         self.buscar(n, int(len(self.tabla)/2), int(len(self.tabla)/2))
-
-#1.2 - 1.3
