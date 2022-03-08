@@ -31,7 +31,7 @@ class ejr1a:
             else:
                 print(c, "no esta en la tabla")
         else:
-                print(c, "no esta en la tabla")
+            print(c, "no esta en la tabla")
         
     def ejecutar(self):
         n = input("Escriba el valor de c: ")
