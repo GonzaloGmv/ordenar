@@ -30,6 +30,7 @@ if __name__ == "__main__":
         elif ejr == 'b':
             ejercicio = ejr1b()
             ejercicio.crear(0, 0, 0)
+            ejercicio.resultado()
             
     if ejr == 2:
         ejercicio = ejr2()

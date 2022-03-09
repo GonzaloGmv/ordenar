@@ -101,5 +101,6 @@ class ejr1b:
                             
         if len(self.r) < len(self.t):
             self.crear(n+1, int(len(self.r)/2), int(len(self.r)/2))
-        else:
-            print(self.r)
+    
+    def resultado(self):
+        print(self.r)
