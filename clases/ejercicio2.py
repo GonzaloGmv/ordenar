@@ -8,14 +8,19 @@ class ejr2():
             tareas.append(tarea)
         random.shuffle(tareas)
         print(tareas)
+        orden = []
         self.tareas = tareas
+        self.orden = orden
 
     def ordenacion(self, n, t):
         if len(self.tareas) > 0:
             if 't' + str(n) == self.tareas[t]:
                 print("Ha realizado la tarea", n)
+                self.orden.append(self.tareas[t])
                 del self.tareas[t]
                 self.ordenacion(n+1, 0)
             else:
                 print("Esa tarea no es la que toca ahora, realice la tarea", n)
                 self.ordenacion(n, t+1)
+        else:
+            print(self.orden)
