@@ -80,7 +80,6 @@ class ejr1b:
             else:
                 if self.t[n] == self.r[m]:
                     self.r.insert(m, self.t[n])
-
                 elif self.t[n] < self.r[m]:
                     if m == 0:
                         self.r.insert(0, self.t[n])
@@ -89,7 +88,6 @@ class ejr1b:
                             self.crear(n, int(m/2), m)
                         else:
                             self.r.insert(m, self.t[n])
-
                 elif self.t[n] > self.r[m]:
                     if m == len(self.r) - 1:
                         self.r.append(self.t[n])
@@ -97,8 +95,7 @@ class ejr1b:
                         if m0 == m or m0 < m:
                             self.crear(n, int((len(self.r)+m)/2), m)
                         else:
-                            self.r.insert(m+1, self.t[n])
-                            
+                            self.r.insert(m+1, self.t[n])            
         if len(self.r) < len(self.t):
             self.crear(n+1, int(len(self.r)/2), int(len(self.r)/2))
     
