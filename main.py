@@ -1,5 +1,6 @@
 from clases.ejercicio1 import ejr1a, ejr1b
 from clases.ejercicio2 import ejr2
+from clases.ejercicio3 import ejr3
 
 if __name__ == "__main__":
     while True:
@@ -31,3 +32,6 @@ if __name__ == "__main__":
     elif ejr == 2:
         ejercicio = ejr2()
         ejercicio.ordenacion(1, 0)
+    else:
+        ejercicio = ejr3()
+        ejercicio.resultado()
