@@ -10,9 +10,8 @@ class ejr3():
                 try:
                     for i in range(len(vector)):
                         vector[i] = float(vector[i])
-                    print("Los ordenaremos como tipo float")
                 except:
-                    print("Los ordenaremos como tipo string")
+                    break
             break
         s1 = []
         s2 = []
@@ -48,12 +47,23 @@ class ejr3():
                 else:
                     break
 
+    def explorar(self, segmento):
+        mi = segmento[0]
+        for i in range(len(segmento)-1):
+            segmento[i] = segmento[i + 1]
+        segmento[len(segmento)-1] = mi
+        print(segmento)
+
     def resultado(self):
         self.segmentos()
-        print("Este es el primer vector:")
+        print("Este es el primer segmento:")
         print(self.s1)
+        print("Este es el primer segmento ordenado:")
+        self.explorar(self.s1)
         if self.s2 != ['']:
-            print("Este es el segundo vector:")
+            print("Este es el segundo segmento:")
             print(self.s2)
+            print("Este es el segundo segmento ordenado:")
+            self.explorar(self.s2)
         else:
             print("Solo hay un vector")
