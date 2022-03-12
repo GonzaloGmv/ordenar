@@ -2,9 +2,8 @@
 
 Mi dirección de github para este repositorio es: [ github](https://github.com/GonzaloGmv/ordenar)
 
-Mi diagrama de flujo para este proyecto es:
+El diagrama de flujo se encuentra en la carpeta diagramas, como archivo .jpg y como archivo .drawio y es el siguiente:
 
-Se encuentra en la carpeta diagramas, como archivo .jpg y como archivo .drawio
 ![diagrama](https://user-images.githubusercontent.com/91721237/158027643-f206f135-36e2-48bd-8ef8-e00f9bf6e119.jpg)
 
 ### Ejercicio 1
