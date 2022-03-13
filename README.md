@@ -6,6 +6,10 @@ El diagrama de flujo se encuentra en la carpeta diagramas, como archivo .jpg y c
 
 ![diagrama](https://user-images.githubusercontent.com/91721237/158027643-f206f135-36e2-48bd-8ef8-e00f9bf6e119.jpg)
 
+El UML se encuentra en la carpeta diagramas, como archivo .jpg y como archivo .drawio y es el siguiente:
+
+![uml](https://user-images.githubusercontent.com/91721237/158073053-3677f934-b5b3-42de-acdb-ca5a97b4b995.jpg)
+
 ### Ejercicio 1
 Mi código para este ejercicio es el siguiente:
 ```
